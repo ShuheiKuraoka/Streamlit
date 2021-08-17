@@ -1,5 +1,5 @@
 import os
-
+!pip install --upgrade google-cloud-speech
 from google.cloud import speech
 # import io
 
@@ -47,7 +47,7 @@ if upload_file is not None:
     
     st.subheader('言語選択')
     option = st.selectbox('翻訳言語を選択してください',
-                         ('英語', '日本語', 'スペイン語'))
+                        ('英語', '日本語', 'スペイン語'))
     st.write('選択中の言語：', option)
     
     st.write('文字起こし')
