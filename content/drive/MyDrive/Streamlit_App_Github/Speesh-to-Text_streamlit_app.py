@@ -5,8 +5,7 @@
     "colab": {
       "name": "Colab_ArgoTunnel_Speech-to-Text-Streamlit",
       "provenance": [],
-      "collapsed_sections": [],
-      "include_colab_link": true
+      "collapsed_sections": []
     },
     "kernelspec": {
       "display_name": "Python 3",
@@ -14,16 +13,6 @@
     }
   },
   "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/ShuheiKuraoka/Streamlit/blob/main/content/drive/MyDrive/Streamlit_App_Github/Speesh-to-Text_streamlit_app.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
     {
       "cell_type": "markdown",
       "metadata": {
@@ -151,12 +140,12 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "mPxojV2_0NjJ",
-        "outputId": "f4b915ad-d8d0-4e07-cc0f-485f26cbe7c9"
+        "outputId": "a31a1277-e860-4347-a7a2-a8e16c902466"
       },
       "source": [
         "!git init"
       ],
-      "execution_count": 13,
+      "execution_count": 20,
       "outputs": [
         {
           "output_type": "stream",
@@ -174,12 +163,12 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "afe06dd6-f9bb-4b80-fbf4-dfce267f520c"
+        "outputId": "b211505f-0e1e-4e6a-aa0e-12d2cee3e08e"
       },
       "source": [
         "!git remote add origin https://github.com/ShuheiKuraoka/Streamlit.git"
       ],
-      "execution_count": 14,
+      "execution_count": 21,
       "outputs": [
         {
           "output_type": "stream",
@@ -233,11 +222,12 @@
         "id": "Itif4QdT6SGU"
       },
       "source": [
+        "!cd /content/drive/MyDrive/Streamlit_App_Github\n",
         "!git add /content/drive/MyDrive/Streamlit_App_Github/Speesh-to-Text_streamlit_app.py\n",
         "#\n",
         "#!git add ."
       ],
-      "execution_count": 15,
+      "execution_count": 25,
       "outputs": []
     },
     {
@@ -278,19 +268,35 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "rajP_eQ2AJC0",
-        "outputId": "e51c8174-c71d-44d9-bedd-810e0428585f"
+        "outputId": "a5fdf0a3-0179-4f47-bf0d-39860d7298a8"
       },
       "source": [
         "!git commit -m \"1st commit \""
       ],
-      "execution_count": 16,
+      "execution_count": 23,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "[master (root-commit) 91a4b6a] 1st commit\n",
-            " 1 file changed, 58 insertions(+)\n",
-            " create mode 100644 drive/MyDrive/Streamlit_App_Github/Speesh-to-Text_streamlit_app.py\n"
+            "On branch main\n",
+            "Untracked files:\n",
+            "\t\u001b[31m.config/\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/.py\u001b[m\n",
+            "\t\u001b[31m\"drive/MyDrive/AI\\346\\225\\231\\350\\202\\262\\351\\226\\213\\347\\231\\272\\351\\203\\250\\351\\226\\242\\351\\200\\243 (1)\"\u001b[m\n",
+            "\t\u001b[31m\"drive/MyDrive/AI\\346\\225\\231\\350\\202\\262\\351\\226\\213\\347\\231\\272\\351\\203\\250\\351\\226\\242\\351\\200\\243/\"\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/Colab Notebooks/\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/ML0001/\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/OSR_us_000_0010_8k.wav \u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/PY0001/\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/StreamlitApp.py\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/StreamlitApp_pyfile.py\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/Streamlit_App_Github/requirements.txt\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/sample.wav \u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/secret.json\u001b[m\n",
+            "\t\u001b[31mdrive/MyDrive/test_streamlit_app.py\u001b[m\n",
+            "\t\u001b[31msample_data/\u001b[m\n",
+            "\n",
+            "nothing added to commit but untracked files present\n"
           ],
           "name": "stdout"
         }
@@ -353,18 +359,21 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "0Ypz2uvvVlwy",
-        "outputId": "9d0070ac-64e4-4679-ec2c-b1ea14f3e0fd"
+        "outputId": "d7f0f72b-1dba-4793-cfaf-3833273eada2"
       },
       "source": [
         "#失敗したコミットを修正したい時\n",
         "!git commit --amend -m \"1st commit\""
       ],
-      "execution_count": 7,
+      "execution_count": 26,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "fatal: You have nothing to amend.\n"
+            "[main f35ee46] 1st commit\n",
+            " Date: Tue Aug 17 11:26:14 2021 +0000\n",
+            " 1 file changed, 58 insertions(+)\n",
+            " create mode 100644 drive/MyDrive/Streamlit_App_Github/Speesh-to-Text_streamlit_app.py\n"
           ],
           "name": "stdout"
         }
@@ -512,7 +521,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "EsSqinCt8wNs",
-        "outputId": "755c064c-708b-49e3-a525-0ed97eba8d36"
+        "outputId": "adbe679c-5b8c-494f-f7ec-c301a62baad2"
       },
       "source": [
         "!git push origin main\n",
@@ -524,7 +533,7 @@
         "#git push origin masterでpushしようとすると、レポジトリ名が異なるため、エラーになってしまうということです。\n",
         "#これまでに作成したレポジトリは、変更していないと、「master」ブランチであるということにも注意です。"
       ],
-      "execution_count": 19,
+      "execution_count": 27,
       "outputs": [
         {
           "output_type": "stream",
